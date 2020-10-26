@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"
+        integrity="sha512-WIklPM6qPCIp6d3fSSr90j+1unQHUOoWDS4sdTiR8gxUTnyZ8S2Mr8e10sKKJ/bhJgpAa/qG068RDkg6fIlNFA=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.5/addons/p5.dom.js"></script>
+
+    <script>
+
+
+    </script>
+</head>
+
+<body>
+    <h2>Send Text to Zoom Captioning</h2>
+    <p>by Tetsuaki Baba</p>
+
+    <p>
+        <select id="lang">
+            <option value="en-US">US</option>
+            <option value="jp-JP">JP</option>
+        </select>
+
+        <input type="text" size="50" id="text"></input>
+        <button id="button_send">Send</button>
+
+    </p>
+
+
+    <p>
+        Zoom Captioning URL<br>
+        <textarea id="textarea_captioning_url" cols=50 rows=5></textarea><br>
+    </p>
+
+    <script src="sketch.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+</body>
+
+</html>
